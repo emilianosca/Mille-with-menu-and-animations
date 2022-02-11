@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/navStyles.css">
+    <link rel="stylesheet" href="styles/animationStyles.css">
+    
+    <title>Document</title>
+</head>
+<!-- document with nav bar and animation  -->
+<!-- mising menu, landing page and more -->
+
+<body>
+    <!-- section for navbar starts -->
+    <section class="home">
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Your Logo</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+    </section>
+
+    <!-- section for navbar end -->
+
+   <main>
+      <section class="landing">
+        <h2 class="big-text">Stay Afloat</h2>
+      </section>
+
+
+      <section class="body">
+        
+      </section>
+    
+    </main>
+
+     <!-- section for animations  start-->
+     <div class="intro">
+        <div class="intro-text">
+          <!-- inserted -->
+          <div class="wrapper" id="wrapper">
+            <div class="typing-demo" id="typing-demo"> 
+              <h1 class= "hide" id="hide-typingEsp" > Pastelería Francesa </h1 > 
+              <br>
+              <h1 class= "hide" id="hide-typingFran"> Pâtisserie française   </h1> 
+            </div>
+        </div>
+        <!-- inserted -->
+        </div>
+      </div>
+        <!-- section for animations ends -->
+   
+
+
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<script src="apps/navApp.js"></script>
+
+
+<div class="slider"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+<script src="apps/animationApp.js"></script>
+
+</body>
+</html>
