@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/navStyles.css">
     <link rel="stylesheet" href="styles/animationStyles.css">
+    <link rel="stylesheet" href="styles/menuStyles.css">
+    <link rel="stylesheet" href="styles/bodyStyles.css">
     
     <title>Document</title>
 </head>
@@ -17,8 +19,10 @@
     <section class="home">
     <nav class="nav">
         <div class="container">
-            <div class="logo">
-                <a href="#">Your Logo</a>
+            <div class="logo" id="logo">
+                <a href="#">
+                  <img src="images/logo.png" alt="logo">
+                </a>
             </div>
             <div id="mainListDiv" class="main_list">
                 <ul class="navlinks">
@@ -40,14 +44,70 @@
     <!-- section for navbar end -->
 
    <main>
-      <section class="landing">
-        <h2 class="big-text">Stay Afloat</h2>
-      </section>
+      <!-- <section class="landing"> -->
+        <!-- <p style="background-image: url('https://images.unsplash.com/photo-1541870730196-cd1efcbf5649?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80');"></p>
+        <h2 class="big-text">Stay Afloat</h2> -->
+      <!-- </section> -->
+
 
 
       <section class="body">
+        <div class="landing">
         
-      </section>
+          
+
+          <ul id="backgroundColor">
+          </ul>
+
+          <ul id="textMille">
+            <h1>
+              <li>Mille Delices</li>
+            </h1>
+          </ul>
+          
+          <ul id="coffeeImg2">  <img src="images/coffee1.jpeg" alt="coffeeImage1">  </ul>
+          <!-- <ul id="coffeeImg1"> <img src="images/coffee2.jpg" alt="coffeImage2"> </ul> -->
+
+        </div>
+     
+     
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat tenetur illum excepturi ea, non hic corporis similique commodi. Ipsa officia commodi incidunt in doloribus nam fugit alias perspiciatis praesentium magni.</p>
+
+    </section>
+
+      
+
+        <!-- space for menu starts -->
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>our menu</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container" id="btn-container"></div>
+
+      <!-- menu items -->
+      <div class="section-center">
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="images/item-1.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+      </div>
+    </section>
+        <!-- space for menu ends -->
     
     </main>
 
@@ -73,7 +133,7 @@
     
 <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="js/scripts.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
 
 
 
@@ -99,7 +159,10 @@
       integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
       crossorigin="anonymous"
     ></script>
+
 <script src="apps/animationApp.js"></script>
+
+<script src="apps/menuApp.js"></script>
 
 </body>
 </html>
