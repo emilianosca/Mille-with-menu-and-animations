@@ -51,11 +51,3 @@
   height: 30vh;
   width: 100vw;
 }
-
-.body .landing #textMille {
-  /* z-index: 1; */
-  position: relative;
-  top: -20vh;
-  color: #49111c;
-  font-size: 4rem;
-}
