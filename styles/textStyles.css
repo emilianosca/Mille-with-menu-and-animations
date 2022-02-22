@@ -8,6 +8,7 @@
 }
 
 .title-landing {
+  z-index: -1;
   text-align: center;
   background-color: hsla(230, 40%, 50%, 1);
   height: 45vh;

@@ -173,6 +173,7 @@ Menu
 */
 
 .menu {
+  z-index: -1;
   padding: 5rem 0;
 }
 .title {

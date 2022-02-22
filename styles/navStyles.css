@@ -333,8 +333,9 @@
 }
 
 .affix {
+  z-index: 10;
   padding: 0;
-  background-color: #111;
+  background-color: #f1f5f8;
 }
 
 .myH2 {
