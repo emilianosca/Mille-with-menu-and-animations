@@ -1,5 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Righteous);
 
+@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@700&family=Lato:ital,wght@0,300;1,100&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -10,18 +12,26 @@
 .title-landing {
   z-index: -1;
   text-align: center;
-  background-color: hsla(230, 40%, 50%, 1);
+  background-color: hsl(206deg 33% 96%);
   height: 45vh;
 }
 
 .title-landing h1 {
   z-index: 2;
   display: inline-block;
-  color: rgb(255, 255, 255);
-  font-family: "Righteous", serif;
+  color: hsla(189, 60%, 54%, 0.72);
+
+  /* hsla(313, 57%, 74%, 0.98) */
+  /* font-family: "Righteous", serif; */
+  font-family: "Enriqueta", serif;
   font-size: 8em;
-  text-shadow: 0.06em 0.03em 0 hsla(230, 40%, 50%, 1);
+  text-shadow: 0.06em 0.03em 0 hsla(319, 57%, 72%, 0.98);
 }
+
+/* opciones en colores  */
+/* A hsla(319, 57%, 72%, 0.98)  */
+/* hsla(313, 57%, 74%, 0.98)  */
+
 .title-landing h1:after {
   content: attr(data-shadow);
   position: absolute;
@@ -32,8 +42,8 @@
   background-image: linear-gradient(
     45deg,
     transparent 45%,
-    hsla(48, 20%, 90%, 1) 45%,
-    hsla(48, 20%, 90%, 1) 55%,
+    hsla(313, 57%, 74%, 0.98) 45%,
+    hsla(189, 60%, 54%, 0.72) 55%,
     transparent 0
   );
   background-size: 0.05em 0.05em;
