@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es-la">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="styles/menuStyles.css">
     <link rel="stylesheet" href="styles/bodyStyles.css">
     <link rel="stylesheet" href="styles/textStyles.css">
+    <link rel="stylesheet" href="styles/footerStyles.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     
     <title>Document</title>
 </head>
@@ -127,7 +131,18 @@
         <!-- section for animations ends -->
    
 
+<!-- section for footer starts  -->
+  <section class="footer">
+    <div class="share">
+        <a href="https://es-la.facebook.com/MilleDelices/" class="fab fa-facebook-f"> </a>
+        <a href="https://www.instagram.com/milledelices/?hl=es" class="fab fa-instagram"></a>
+    </div>
+    
+    <div class="credit">Todos los derechos reservados</div>
 
+  </section>
+
+<!-- section for footer ends -->
 
     
 <!-- Jquery needed -->
@@ -142,7 +157,7 @@
     $(window).scroll(function() {
         if ($(document).scrollTop() > 50) {
             $('.nav').addClass('affix');
-            console.log("OK");
+            // console.log("OK");
         } else {
             $('.nav').removeClass('affix');
         }
