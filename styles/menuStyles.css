@@ -8,6 +8,7 @@ Fonts
 
 @import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@700&family=Lato:ital,wght@0,300;1,100&family=Major+Mono+Display&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Rokkitt:wght@500&display=swap");
 /*
 =============== 
 Variables
@@ -187,7 +188,8 @@ Menu
 }
 
 .menu .title h2 {
-  font-family: "Major Mono Display", monospace;
+  /* font-family: "Major Mono Display", monospace; */
+  font-family: "Rokkitt", monospace;
 }
 
 .underline {
