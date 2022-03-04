@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="styles/bodyStyles.css">
     <link rel="stylesheet" href="styles/textStyles.css">
     <link rel="stylesheet" href="styles/footerStyles.css">
+    <link rel="stylesheet" href="styles/globalStyles.css">
 
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -24,34 +25,37 @@
 <!-- document with nav bar and animation  -->
 <!-- mising menu, landing page and more -->
 
+
 <body>
+
 <header> 
-    <!-- section for navbar starts -->
-    <section class="home">
-    <nav class="nav">
-        <div class="container">
-            <div class="logo" id="logo">
-                <a href="#">
-                  <img src="images/logo.png" alt="logo">
-                </a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="#"  id="navlinksJS1">About</a></li>
-                    <li><a href="#"  id="navlinksJS2">Portfolio</a></li>
-                    <li><a href="#"  id="navlinksJS3">Services</a></li>
-                    <li><a href="#"  id="navlinksJS4">Contact</a></li>
-                </ul>
-            </div>
-            <span class="navTrigger">
-                <i></i>
-                <i></i>
-                <i></i>
-            </span>
-        </div>
-    </nav>
-    </section>
+  <!-- section for navbar starts -->
+  <section class="home">
+  <nav class="nav">
+      <div class="container">
+          <div class="logo" id="logo">
+              <a href="#">
+                <img src="images/logo.png" alt="logo">
+              </a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#"  id="navlinksJS1">About</a></li>
+                  <li><a href="#"  id="navlinksJS2">Portfolio</a></li>
+                  <li><a href="#"  id="navlinksJS3">Services</a></li>
+                  <li><a href="#"  id="navlinksJS4">Contact</a></li>
+              </ul>
+          </div>
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+      </div>
+  </nav>
+  </section>
 </header>
+
 
     <!-- section for navbar end -->
 
@@ -61,31 +65,23 @@
         <h2 class="big-text">Stay Afloat</h2> -->
       <!-- </section> -->
 
-
-
-      <section class="body">
-        <div class="landing">
-        
-          <!-- <ul id="backgroundColor">
-          </ul> -->
-
-        <div class="title-landing ">
-            <h1 data-shadow="Mille "> Mille </h1>
-            <br>
-            <h1 data-shadow="Delize"> Delize</h1>
+      <section class="titleContainer">
+        <div class="mainTitle">
+            <h1>MILLE DÉLICES</h1>
         </div>
-
-          <!-- <ul id="coffeeImg2">  <img src="images/coffee1.jpeg" alt="coffeeImage1">  </ul> -->
-          <!-- <ul id="coffeeImg1"> <img src="images/coffee2.jpg" alt="coffeImage2"> </ul> -->
-
+        <ul class="images">
+            <img id="img1" src="icons/coffee-beans.png" alt="">
+            <img id="img2" src="icons/coffee-cup.png" alt="">
+            <img id="img3" src="icons/cupcake.png" alt="">
+            <img id="img4" src="icons/heart-cake.png" alt="">
+        </ul>
+        <div class="secondTitle">
+            <h2>Tienda de postres y café</h2>
         </div>
-     
-     
-        <!-- <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quaerat tenetur illum excepturi ea, non hic corporis similique commodi. Ipsa officia commodi incidunt in doloribus nam fugit alias perspiciatis praesentium magni.</p> -->
-
+        <div class="pointsTitle">
+          <h3>.....................................................</h3>
+        </div>
     </section>
-
-      
 
         <!-- space for menu starts -->
     <section class="menu">
@@ -120,7 +116,20 @@
         <!-- space for menu ends -->
     
     </main>
+  
 
+  <!-- section for footer starts  -->
+<footer>
+  <section class="footer">
+    <div class="share">
+        <a href="https://es-la.facebook.com/MilleDelices/" class="fab fa-facebook-f"> </a>
+        <a href="https://www.instagram.com/milledelices/?hl=es" class="fab fa-instagram"></a>
+    </div>
+    <div class="credit">Todos los derechos reservados</div>
+  </section>
+</footer>
+
+<!-- section for footer ends -->  
      <!-- section for animations  start-->
      <div class="intro">
         <div class="intro-text">
@@ -138,17 +147,6 @@
         <!-- section for animations ends -->
    
 
-<!-- section for footer starts  -->
-<footer>
-  <section class="footer">
-    <div class="share">
-        <a href="https://es-la.facebook.com/MilleDelices/" class="fab fa-facebook-f"> </a>
-        <a href="https://www.instagram.com/milledelices/?hl=es" class="fab fa-instagram"></a>
-    </div>
-    <div class="credit">Todos los derechos reservados</div>
-  </section>
-</footer>
-<!-- section for footer ends -->
 
     
 <!-- Jquery needed -->
@@ -184,5 +182,9 @@
 
 <script src="apps/menuApp.js"></script>
 
+
+
 </body>
+
+
 </html>

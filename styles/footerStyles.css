@@ -1,8 +1,30 @@
 .footer {
   background-color: #112942;
+  display: flex;
   text-align: center;
   position: relative;
+  /* position: fixed; */
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+  justify-content: flex-start;
 }
+
+/* .footer {
+  position: fixed;
+  padding: 10px 10px 0px 10px;
+  bottom: 0;
+  width: 100%; */
+/* Height of the footer*/
+/* height: 40px; */
+/* background: grey; */
+/* } */
+
+/* .footer {
+  position: relative;
+  height: 200px;
+  margin-top: -200px;
+} */
 
 .footer .share {
   padding: 1rem 0;

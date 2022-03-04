@@ -1,64 +1,66 @@
-@import url(https://fonts.googleapis.com/css?family=Righteous);
-
-@import url("https://fonts.googleapis.com/css2?family=Enriqueta:wght@700&family=Lato:ital,wght@0,300;1,100&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Fredoka:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courier+Prime:ital@0;1&display=swap");
 * {
-  margin: 0;
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
-  position: relative;
+  margin: 0;
 }
 
-.title-landing {
-  z-index: -1;
-  text-align: center;
-  background-color: hsl(206deg 33% 96%);
-  height: 45vh;
+.titleContainer {
+  width: 100vw;
+  height: 25vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+
+  /* font-family: "Fredoka One", cursive; */
 }
 
-.title-landing h1 {
-  z-index: 2;
-  display: inline-block;
-  color: hsla(189, 60%, 54%, 0.72);
-
-  /* hsla(313, 57%, 74%, 0.98) */
-  /* font-family: "Righteous", serif; */
-  font-family: "Enriqueta", serif;
-  font-size: 8em;
-  text-shadow: 0.06em 0.03em 0 hsla(319, 57%, 72%, 0.98);
+.images {
+  padding: 0.2rem 0rem 1rem;
+  display: flex;
 }
 
-/* opciones en colores  */
-/* A hsla(319, 57%, 72%, 0.98)  */
-/* hsla(313, 57%, 74%, 0.98)  */
-
-.title-landing h1:after {
-  content: attr(data-shadow);
-  position: absolute;
-  top: 0.05em;
-  left: 0.1em;
-  z-index: -1;
-  text-shadow: none;
-  background-image: linear-gradient(
-    45deg,
-    transparent 45%,
-    hsla(313, 57%, 74%, 0.98) 45%,
-    hsla(189, 60%, 54%, 0.72) 55%,
-    transparent 0
-  );
-  background-size: 0.05em 0.05em;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-
-  animation: shad-anim 15s linear infinite;
+#img1 {
+  width: 1.5rem;
+  height: auto;
+  margin-inline: 5px;
 }
 
-@keyframes shad-anim {
-  0% {
-    background-position: 0 0;
-  }
-  0% {
-    background-position: 100% -100%;
-  }
+#img2 {
+  width: 1.5rem;
+  height: auto;
+  margin-inline: 5px;
+}
+#img3 {
+  width: 1.5rem;
+  height: auto;
+  margin-inline: 5px;
+}
+#img4 {
+  width: 1.5rem;
+  height: auto;
+  margin-inline: 5px;
+}
+
+.mainTitle h1 {
+  font-size: 3rem;
+  color: #212121;
+  font-family: "Fredoka", cursive;
+  margin: 2rem 0 1rem 0;
+}
+
+.secondTitle h2 {
+  font-size: 1.2rem;
+  /* color: #212121; */
+  font-family: "PT Mono", monospace;
+  font-family: "Courier Prime", monospace;
+}
+
+.pointsTitle h3 {
+  font-size: 1rem;
+  font-family: "Courier Prime", monospace;
+  margin: 2rem;
 }
