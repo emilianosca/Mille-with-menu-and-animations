@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es-la">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Postrería, desayunos y café desde Francia hacia Monterrey">
+    <meta name="og:title" property="og:title" content="Mille Délices; Postrería, desayunos y café">
+    <link rel="stylesheet" href="styles/navStyles.css">
+    <link rel="stylesheet" href="styles/animationStyles.css">
+    <link rel="stylesheet" href="styles/menuStyles.css">
+    <link rel="stylesheet" href="styles/bodyStyles.css">
+    <link rel="stylesheet" href="styles/textStyles.css">
+    <link rel="stylesheet" href="styles/footerStyles.css">
+    <link rel="stylesheet" href="styles/globalStyles.css">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+
+    
+    <title>Menú</title>
+
+</head>
+<!-- document with nav bar and animation  -->
+<!-- mising menu, landing page and more -->
+
+
+<body>
+
+<header> 
+  <!-- section for navbar starts -->
+  <section class="home">
+  <nav class="nav">
+      <div class="container">
+          <div class="logo" id="logo">
+              <a href="./index.html">
+                <img src="images/logo.png" alt="logo">
+              </a>
+          </div>
+          <!-- <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="#"  id="navlinksJS1">About</a></li>
+                  <li><a href="#"  id="navlinksJS2">Portfolio</a></li>
+                  <li><a href="#"  id="navlinksJS3">Services</a></li>
+                  <li><a href="#"  id="navlinksJS4">Contact</a></li>
+              </ul>
+          </div> -->
+          <!-- <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span> -->
+      </div>
+  </nav>
+  </section>
+</header>
+
+
+    <!-- section for navbar end -->
+
+   <main>
+      <!-- <section class="landing"> -->
+        <!-- <p style="background-image: url('https://images.unsplash.com/photo-1541870730196-cd1efcbf5649?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1036&q=80');"></p>
+        <h2 class="big-text">Stay Afloat</h2> -->
+      <!-- </section> -->
+
+      <!-- <section class="titleContainer"> -->
+        <!-- <div id="mainTitleImg">
+          <img src="images/bread.jpeg" alt="macarrons">
+        </div> -->
+<!--       
+        <div class="mainTitle">
+            <h1>MILLE DÉLICES</h1>
+        </div>
+        <ul class="images">
+            <img id="img1" src="icons/coffee-beans.png" alt="">
+            <img id="img2" src="icons/coffee-cup.png" alt="">
+            <img id="img3" src="icons/cupcake.png" alt="">
+            <img id="img4" src="icons/heart-cake.png" alt="">
+        </ul>
+        <div class="secondTitle">
+            <h2>Tienda de postres y café</h2>
+        </div>
+        <div class="pointsTitle">
+          <h3>.....................................................</h3>
+        </div>
+    </section> -->
+
+        <!-- space for menu starts -->
+    <section class="menu">
+      <!-- title -->
+      <div class="title">
+        <h2>NUESTRO MENÚ</h2>
+        <div class="underline"></div>
+      </div>
+      <!-- filter buttons -->
+      <div class="btn-container" id="btn-container"></div>
+
+      <!-- menu items -->
+      <div class="section-center">
+        <!-- single item -->
+        <article class="menu-item">
+          <img src="images/item-1.jpeg" alt="menu item" class="photo" />
+          <div class="item-info">
+            <header>
+              <h4>buttermilk pancakes</h4>
+              <h4 class="price">$15</h4>
+            </header>
+            <p class="item-text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae, sint quam. Et reprehenderit fugiat nesciunt inventore
+              laboriosam excepturi! Quo, officia.
+            </p>
+          </div>
+        </article>
+        <!-- end of single item -->
+      </div>
+    </section>
+        <!-- space for menu ends -->
+    
+    </main>
+  
+
+  <!-- section for footer starts  -->
+<footer>
+  <section class="footer">
+
+    <div class="hours">
+      <ul>
+        <p>|  Lunes a Sábado 8:00am - 9:00pm  |</p>
+        <p>|  Domingo 10:00am - 8:00pm  |</p>
+      </ul>
+    </div>
+    <div class="share">
+        <a href="https://es-la.facebook.com/MilleDelices/" class="fab fa-facebook-f"> </a>
+        <a href="https://www.instagram.com/milledelices/?hl=es" class="fab fa-instagram"></a>
+    </div>
+    <div class="credit">Todos los derechos reservados</div>
+  </section>
+</footer>
+
+<!-- section for footer ends -->  
+     <!-- section for animations  start-->
+     <div class="intro">
+        <div class="intro-text">
+          <!-- inserted -->
+          <div class="wrapper" id="wrapper">
+            <div class="typing-demo" id="typing-demo"> 
+              <h1 class= "hide" id="hide-typingEsp" > Pastelería Francesa </h1 > 
+              <br>
+              <h1 class= "hide" id="hide-typingFran"> Pâtisserie française   </h1> 
+            </div>
+        </div>
+        <!-- inserted -->
+        </div>
+      </div>
+        <!-- section for animations ends -->
+   
+
+
+    
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <!-- <script src="js/scripts.js"></script> -->
+
+
+
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            // console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<script src="apps/navApp.js"></script>
+
+
+<div class="slider"></div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"
+    ></script>
+
+<script src="apps/animationApp.js"></script>
+
+<script src="apps/menuApp.js"></script>
+
+
+
+</body>
+
+
+</html>

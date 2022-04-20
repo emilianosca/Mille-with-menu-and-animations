@@ -74,3 +74,12 @@
 .footer .credit span {
   color: var(--main-color);
 }
+
+.footer .hours {
+  font-size: 1.3em;
+  margin-top: 4vh;
+}
+
+.footer .hours p {
+  color: #fff;
+}

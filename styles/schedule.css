@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans|Roboto:400,700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #112942;
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin-top: auto;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: white;
+    bottom: -40vh;  
+}
+
+.schedule ul h1 {
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-size: 1.5rem; ;
+}
+
+.schedule ul h2 {
+    font-family: 'Square Peg', cursive;
+    
+}

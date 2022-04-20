@@ -17,6 +17,14 @@
 
   /* font-family: "Fredoka One", cursive; */
 }
+#mainTitleImg {
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+#mainTitleImg img {
+  width: 100vw;
+}
 
 .images {
   padding: 0.2rem 0rem 1rem;
